@@ -1,4 +1,4 @@
-# ruby-challenges
+# Ruby Challenges
 
 ## Naming conventions
 
