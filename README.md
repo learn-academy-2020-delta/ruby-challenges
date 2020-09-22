@@ -2,9 +2,9 @@
 
 ## Naming conventions
 
-- Branch: `partner1-partner2-project`
-- Project (folder): `partner1-partner2-project`
-- Challenge (file): `partner1-partner2-project.rb`
+- Branch: `topic-partner1-partner2`
+- Project (folder): `project-partner1-partner2`
+- Challenge (file): `challengeName-partner1-partner2.rb`
 
 ## Merging Branches at EOD
 
