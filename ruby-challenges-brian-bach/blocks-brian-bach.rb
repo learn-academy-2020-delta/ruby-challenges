@@ -44,20 +44,25 @@
 #     puts array.min
 # end
 
-# little_num([0.23123, 23, 23432])
+# # little_num([0.23123, 23, 23432])
 
 # def odd_low_to_high(array)
-#     answer_array = []
-#     array.map do |value|
-#         if value % 2 == 1
-#             answer_array.push(value)
-#         else
-#         end
-#     end
-#     answer_array.sort
+#     # this works but we like the other way better
+#     # answer_array = []
+#     # array.map do |value|
+#     #     if value % 2 == 1
+#     #         answer_array.push(value)
+#     #     else
+#     #     end
+#     # end
+#     # p answer_array.sort
+#     answer = array.select do |num| 
+#         num.odd?
+#     end.sort
+#     p answer
 # end
 
-# p odd_low_to_high([15, 2, 3, 4, 5])
+# odd_low_to_high([17, 2, 3, 4, 5])
 
 # def flip_case(array)
 #     array.map do |value|
@@ -73,20 +78,20 @@
 
 # p starts_with_letter(['Apple', 'Avocado', 'Banana', 'Mango'], 'A')
 
-def fizz_buzz
-    value = 1
-    100.times do
-        if value % 3 == 0 and value % 5 == 0
-            puts "FizzBuzz"
-        elsif value % 3 == 0
-            puts "Fizz"
-        elsif value % 5 == 0
-            puts "Buzz"
-        else
-            puts value
-        end
-        value += 1
-    end
-end
+# def fizz_buzz
+#     value = 1
+#     100.times do
+#         if value % 3 == 0 and value % 5 == 0
+#             puts "FizzBuzz"
+#         elsif value % 3 == 0
+#             puts "Fizz"
+#         elsif value % 5 == 0
+#             puts "Buzz"
+#         else
+#             puts value
+#         end
+#         value += 1
+#     end
+# end
 
-fizz_buzz
+# fizz_buzz
