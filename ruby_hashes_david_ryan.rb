@@ -22,8 +22,9 @@ my_phone.delete(:venmo)
 # end
 
 def app hash
-  hash.each do |key, value|
-    "#{key} is a #{value}"
-  end
+  hash.transform_keys!(&:capitalize)
+  hash.map do |key, value|
+      "#{key} is a #{value}"
+  end 
 end
-puts app my_phone
+p app my_phone
