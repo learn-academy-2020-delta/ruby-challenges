@@ -110,16 +110,39 @@
 
 #Create a method that takes in an array of words and returns all the words that start with a particular letter. Ex) Given the array ['Apple', 'Avocado', 'Banana', 'Mango'] and the letter 'a' the method should return ['Apple', 'Avocado']. With the same method, given the letter 'm' should return ['Mango']
 
-my_array = ['Apple', 'Avocado', 'Banana', 'Mango']
+#my_array = ['Apple', 'Avocado', 'Banana', 'Mango']
 
-def words_with_certain_letter (array, letter) 
-    new_array = []
-    array.map do | word |
-        if word[0].downcase.include?(letter.downcase)
-            new_array << word
+#def words_with_certain_letter (array, letter) 
+#    new_array = []
+#    array.map do | word |
+#        if word[0].downcase.include?(letter.downcase)
+#            new_array << word
+#        end
+#    end
+#    new_array
+#end
+
+#p words_with_certain_letter(my_array, 'M')
+
+#Write a method that prints the numbers from 1 to 100. For multiples of three print Fizz instead of the number, for multiples of five print Buzz instead of the number, for numbers that are multiples of both three and five print FizzBuzz, for all other numbers print the number.
+
+def fizz_buzz num
+    anchor = 1
+    while anchor <= num
+        if anchor % 3 == 0 && anchor % 5 == 0
+            puts 'FizzBuzz'
+            anchor += 1
+        elsif anchor % 3 == 0
+            puts 'Fizz'
+            anchor += 1
+        elsif anchor % 5 == 0
+            puts 'Buzz'
+            anchor += 1
+        else
+            puts anchor
+            anchor += 1
         end
     end
-    new_array
 end
 
-p words_with_certain_letter(my_array, 'M')
+puts fizz_buzz(100)
