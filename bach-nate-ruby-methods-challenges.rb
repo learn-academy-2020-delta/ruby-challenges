@@ -58,7 +58,8 @@ def user_login (user_id, password)
         "#{password} is too short."
     elsif user_id.include? '!' or user_id.include? '#' or user_id.include? '$'
         "#{user_id} should NOT include a special character"
-    elsif password.include? !="!" or password.include? !="#" or password.include? !="$"
+    # elsif !password.include? "!" or !password.include? "#" or password.include? "$"
+    elsif password =~ /^(!|#|$)$/
         "#{password} should include at least one special character"
     elsif password == 'password'
         "Your password cannot be password."
@@ -77,4 +78,7 @@ end
 # puts user_login 'nate2cool', '1nter#person'
 # # need to fix the OR conditional statements
 # puts user_login 'nate2cool', 'mypassword'
-puts user_login 'bachrocks', 'helloworld!'
+puts user_login 'bachrocks', 'helloworld#'
+puts user_login 'bachrocks', 'helloworld$'
+puts user_login 'bachrocks', 'helloworld'
+
