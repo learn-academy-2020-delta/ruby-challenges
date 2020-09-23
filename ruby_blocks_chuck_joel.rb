@@ -67,7 +67,7 @@
 
 # def is_odd (arr)
 #   new_array = []
-#   arr.map do |value| 
+#   arr.map do |value|
 #     if value % 2 == 1
 #       new_array<<value
 #     end
@@ -77,7 +77,7 @@
 
 # is_odd(my_array)
 
-array_string = ['Apple', 'Potato', 'Green', 'Home', 'Red']
+# array_string = ['Apple', 'Potato', 'Green', 'Home', 'Red']
 
 # def rev_case (arr)
 #   new_array = []
@@ -85,21 +85,37 @@ array_string = ['Apple', 'Potato', 'Green', 'Home', 'Red']
 #     new_array<<value.swapcase()
 #   end
 #   p new_array
-# end 
+# end
 
 # rev_case(array_string)
 
-def letter_case (arr, letter)
-  new_array = []
-  arr.map do |value|
-    if value[0] == letter.upcase() || value[0] == letter.downcase()
-      new_array<<value
+# def letter_case (arr, letter)
+#   new_array = []
+#   arr.map do |value|
+#     if value[0] == letter.upcase() || value[0] == letter.downcase()
+#       new_array<<value
+#     end
+#   end
+#   p new_array
+# end
+#
+# letter_case(array_string, 'P')
+
+# fizzbuzz challenge
+def fizzbuzz ()
+  i = 1
+  while i <= 100
+    if i % 3 == 0 && i % 5 == 0
+        p "fizzbuzz"
+    elsif i % 3 == 0
+        p "fizz"
+    elsif i % 5 == 0
+        p "buzz"
+    else
+        p i
     end
-  end  
-  p new_array
+    i += 1
+  end
 end
 
-letter_case(array_string, 'P')
-
-
-
+fizzbuzz()
