@@ -6,7 +6,7 @@ end
 
 #puts sum_these_numbers 1, 1
 
-def is_even (num) 
+def is_even (num)
     if num % 2 == 0
         "#{num} is an even number!"
     else
