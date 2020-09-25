@@ -47,7 +47,8 @@ describe TaskList do
     #it 'prints completed items' do
     #    my_task.set_title 'laundry'
     #    my_task.change_progress
-    #    expect(my_task_list.@chore_list).to eq ['laundry']
+    #    my_task_list.add_task my_task
+    #    expect(my_task_list.chore_list).to eq ['laundry']
     #end
 
     #Story: As a developer with a TaskList, I can print the incomplete items.
