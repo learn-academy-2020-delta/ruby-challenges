@@ -1,6 +1,6 @@
 class Task
 
-  def initialize (description='Anonymous', is_done='false')
+  def initialize (description='Anonymous', is_done='in progress')
     @description = description
     @is_done = is_done
   end
